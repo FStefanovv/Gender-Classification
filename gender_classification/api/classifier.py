@@ -16,7 +16,7 @@ class GenderClassifier:
     """
 
     def __init__(self):
-        model_path = os.getenv("MODEL_PATH", "../../model/best_model.keras")
+        model_path = os.getenv("MODEL_PATH", "../model/best_model.keras")
         self._model = models.load_model(model_path)
 
     def classify(self, images):
